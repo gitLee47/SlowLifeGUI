@@ -37,12 +37,10 @@ public class Cell extends JButton {
 
     public String toString() {
 	String toReturn = new String("");
-	String currentState = getText();
-	for (int j = 0; j < _maxSize; j++) {
-	    toReturn += currentState;
-	}
+	toReturn += getText();
+	
 	if (toReturn.substring(0,1).equals("X")) {
-	    return toReturn.substring(0,1);
+	    return "X";
 	} else {
 	    return ".";
 	}
